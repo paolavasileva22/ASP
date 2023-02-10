@@ -7,4 +7,4 @@ build_property.PublishSingleFile =
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
 build_property.RootNamespace = DogApp
-build_property.ProjectDir = C:\Users\Student\Documents\12BUPR\DogApp\DogApp\
+build_property.ProjectDir = C:\Users\Student\Documents\ASP\DogApp\DogApp\

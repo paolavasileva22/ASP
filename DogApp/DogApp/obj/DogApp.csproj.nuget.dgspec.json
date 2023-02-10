@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Student\\Documents\\12BUPR\\DogApp\\DogApp\\DogApp.csproj": {}
+    "C:\\Users\\Student\\Documents\\ASP\\DogApp\\DogApp\\DogApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Student\\Documents\\12BUPR\\DogApp\\DogApp\\DogApp.csproj": {
+    "C:\\Users\\Student\\Documents\\ASP\\DogApp\\DogApp\\DogApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Student\\Documents\\12BUPR\\DogApp\\DogApp\\DogApp.csproj",
+        "projectUniqueName": "C:\\Users\\Student\\Documents\\ASP\\DogApp\\DogApp\\DogApp.csproj",
         "projectName": "DogApp",
-        "projectPath": "C:\\Users\\Student\\Documents\\12BUPR\\DogApp\\DogApp\\DogApp.csproj",
+        "projectPath": "C:\\Users\\Student\\Documents\\ASP\\DogApp\\DogApp\\DogApp.csproj",
         "packagesPath": "C:\\Users\\Student\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Student\\Documents\\12BUPR\\DogApp\\DogApp\\obj\\",
+        "outputPath": "C:\\Users\\Student\\Documents\\ASP\\DogApp\\DogApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

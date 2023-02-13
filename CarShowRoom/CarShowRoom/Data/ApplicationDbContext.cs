@@ -17,6 +17,9 @@ namespace CarShowRoom.Data
         }
         public DbSet<Car> Cars { get; set; }
         public DbSet<CarShowRoom.Models.CarAllViewModel> CarAllViewModel { get; set; }
+        public DbSet<CarShowRoom.Models.CarEditViewModel> CarEditViewModel { get; set; }
+        public DbSet<CarShowRoom.Models.CarDetailsViewModel> CarDetailsViewModel { get; set; }
+        public DbSet<CarShowRoom.Models.CarDeleteViewModel> CarDeleteViewModel { get; set; }
         
     }
 }

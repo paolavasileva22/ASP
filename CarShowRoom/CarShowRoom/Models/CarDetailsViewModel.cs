@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CarShowRoom.Models
 {
-    public class CarUpdateViewModel
+    public class CarDetailsViewModel
     {
         public int Id { get; set; }
 

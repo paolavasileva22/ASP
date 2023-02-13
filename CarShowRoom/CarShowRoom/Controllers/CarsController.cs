@@ -50,7 +50,7 @@ namespace CarShowRoom.Controllers
             return this.View();
         }
 
-        public IActionResult All(string searchStringModel, double searchDoublePrice)
+        public IActionResult All(string searchStringModel, string searchCarPrice)
         {
             List<CarAllViewModel> cars = context.Cars
                  .Select(carFromDb => new CarAllViewModel
@@ -64,17 +64,17 @@ namespace CarShowRoom.Controllers
                      Price = carFromDb.Price,
                  }
                  ).ToList();
-            if (!String.IsNullOrEmpty(searchStringModel) && searchDoublePrice.Equals(null))
+            if (!String.IsNullOrEmpty(searchStringModel) && !String.IsNullOrEmpty(searchCarPrice))
             {
-                cars = cars.Where(d => d.Model.Contains(searchStringModel) && d.Price == searchDoublePrice).ToList();
+                cars = cars.Where(c => c.Model.ToLower() == searchStringModel.ToLower() && c.Price == double.Parse(searchCarPrice)).ToList();
             }
             else if (!String.IsNullOrEmpty(searchStringModel))
             {
-                cars = cars.Where(d => d.Model.Contains(searchStringModel)).ToList();
+                cars = cars.Where(c => c.Model.ToLower() == searchStringModel.ToLower()).ToList();
             }
-            else if (searchDoublePrice.Equals(null))
+            else if (!String.IsNullOrEmpty(searchCarPrice))
             {
-                cars = cars.Where(d => d.Price == searchDoublePrice).ToList();
+                cars = cars.Where(c => c.Price == double.Parse(searchCarPrice)).ToList();
             }
             return this.View(cars);
         }
@@ -95,7 +95,7 @@ namespace CarShowRoom.Controllers
             return View(cars);
         }
 
-        public IActionResult Read(int? id)
+        public IActionResult Edit(int? id)
         {
             if (id == null)
             {
@@ -106,7 +106,7 @@ namespace CarShowRoom.Controllers
             {
                 return NotFound();
             }
-            CarReadViewModel car = new CarReadViewModel()
+            CarEditViewModel car = new CarEditViewModel()
             {
                 RegNumber = item.RegNumber,
                 Manufacturer = item.Manufacturer,
@@ -119,7 +119,7 @@ namespace CarShowRoom.Controllers
         }
 
         [HttpPost]
-        public IActionResult Read(CarReadViewModel bindingModel)
+        public IActionResult Edit(CarEditViewModel bindingModel)
         {
             if (ModelState.IsValid)
             {
@@ -138,7 +138,7 @@ namespace CarShowRoom.Controllers
             }
             return View(bindingModel);
         }
-        public IActionResult Update(int? id)
+        public IActionResult Details(int? id)
         {
             if (id == null)
             {
@@ -149,7 +149,7 @@ namespace CarShowRoom.Controllers
             {
                 return NotFound();
             }
-            CarUpdateViewModel car = new CarUpdateViewModel()
+            CarDetailsViewModel car = new CarDetailsViewModel()
             {
                 RegNumber = item.RegNumber,
                 Manufacturer = item.Manufacturer,
@@ -162,7 +162,7 @@ namespace CarShowRoom.Controllers
         }
 
         [HttpPost]
-        public IActionResult Update(CarUpdateViewModel bindingModel)
+        public IActionResult Details(CarDetailsViewModel bindingModel)
         {
             if (ModelState.IsValid)
             {

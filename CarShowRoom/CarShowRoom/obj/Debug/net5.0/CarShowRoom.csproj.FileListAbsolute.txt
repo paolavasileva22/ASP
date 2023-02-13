@@ -393,10 +393,7 @@ C:\Users\Student\Documents\ASP\CarShowRoom\CarShowRoom\obj\Debug\net5.0\CarShowR
 C:\Users\Student\Documents\ASP\CarShowRoom\CarShowRoom\obj\Debug\net5.0\ref\CarShowRoom.dll
 C:\Users\Student\Documents\ASP\CarShowRoom\CarShowRoom\obj\Debug\net5.0\CarShowRoom.pdb
 C:\Users\Student\Documents\ASP\CarShowRoom\CarShowRoom\obj\Debug\net5.0\CarShowRoom.genruntimeconfig.cache
-C:\Users\Student\Documents\ASP\CarShowRoom\CarShowRoom\obj\Debug\net5.0\Razor\Views\Cars\Delete.cshtml.g.cs
-C:\Users\Student\Documents\ASP\CarShowRoom\CarShowRoom\obj\Debug\net5.0\Razor\Views\Cars\Read.cshtml.g.cs
 C:\Users\Student\Documents\ASP\CarShowRoom\CarShowRoom\obj\Debug\net5.0\Razor\Views\Cars\Success.cshtml.g.cs
-C:\Users\Student\Documents\ASP\CarShowRoom\CarShowRoom\obj\Debug\net5.0\Razor\Views\Cars\Update.cshtml.g.cs
 C:\Users\Student\Documents\ASP\CarShowRoom\CarShowRoom\obj\Debug\net5.0\Razor\Views\Delete.cshtml.g.cs
 C:\Users\Student\Documents\ASP\CarShowRoom\CarShowRoom\obj\Debug\net5.0\Razor\Views\Cars\Sort.cshtml.g.cs
 C:\Users\Student\Documents\ASP\CarShowRoom\CarShowRoom\bin\Debug\net5.0\Microsoft.Bcl.AsyncInterfaces.dll
@@ -444,3 +441,6 @@ C:\Users\Student\Documents\ASP\CarShowRoom\CarShowRoom\bin\Debug\net5.0\zh-Hant\
 C:\Users\Student\Documents\ASP\CarShowRoom\CarShowRoom\bin\Debug\net5.0\runtimes\win-arm\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
 C:\Users\Student\Documents\ASP\CarShowRoom\CarShowRoom\bin\Debug\net5.0\runtimes\win-arm64\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
 C:\Users\Student\Documents\ASP\CarShowRoom\CarShowRoom\obj\Debug\net5.0\Razor\Views\Cars\All.cshtml.g.cs
+C:\Users\Student\Documents\ASP\CarShowRoom\CarShowRoom\obj\Debug\net5.0\Razor\Views\Cars\Details.cshtml.g.cs
+C:\Users\Student\Documents\ASP\CarShowRoom\CarShowRoom\obj\Debug\net5.0\Razor\Views\Cars\Delete.cshtml.g.cs
+C:\Users\Student\Documents\ASP\CarShowRoom\CarShowRoom\obj\Debug\net5.0\Razor\Views\Cars\Edit.cshtml.g.cs

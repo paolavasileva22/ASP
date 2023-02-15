@@ -18,32 +18,71 @@ namespace DogApp.Services
         }
         public bool Create(string name, int age, string breed, string picture)
         {
-            throw new NotImplementedException();
+            Dog item = new Dog
+            {
+                Name = name,
+                Age = age,
+                Breed = breed,
+                Picture = picture,
+            };
+            _context.Dogs.Add(item);
+            return _context.SaveChanges() != 0;
         }
 
         public Dog GetDogById(int dogId)
         {
-            throw new NotImplementedException();
+            return _context.Dogs.Find(dogId);
         }
 
         public List<Dog> GetDogs()
         {
-            throw new NotImplementedException();
+            List<Dog> dogs = _context.Dogs.ToList();
+            return dogs;
         }
 
         public List<Dog> GetDogs(string searchStringBreed, string searchStringName)
         {
-            throw new NotImplementedException();
+            List<Dog> dogs = _context.Dogs.ToList();
+            if (!string.IsNullOrEmpty(searchStringBreed) && !String.IsNullOrEmpty(searchStringName))
+            {
+                dogs = dogs.Where(d => d.Breed.Contains(searchStringBreed) && d.Name.Contains(searchStringName)).ToList();
+            }
+            else if (!string.IsNullOrEmpty(searchStringBreed))
+            {
+                dogs = dogs.Where(d => d.Breed.Contains(searchStringBreed)).ToList();
+            }
+
+            else if (!string.IsNullOrEmpty(searchStringName))
+            {
+                dogs = dogs.Where(d => d.Name.Contains(searchStringName)).ToList();
+            }
+            return dogs;
         }
 
         public bool RemoveById(int dogId)
         {
-            throw new NotImplementedException();
+            var dog = GetDogById(dogId);
+            if (dog == default(Dog))
+            {
+                return false;
+            }
+            _context.Remove(dog);
+            return _context.SaveChanges() != 0;
         }
 
         public bool UpdateDog(int dogId, string name, int age, string breed, string picture)
         {
-            throw new NotImplementedException();
+            var dog = GetDogById(dogId);
+            if (dog == default(Dog))
+            {
+                return false;
+            }
+            dog.Name = name;
+            dog.Age = age;
+            dog.Breed = breed;
+            dog.Picture = picture;
+            _context.Update(dog);
+            return _context.SaveChanges() != 0;
         }
     }
 }

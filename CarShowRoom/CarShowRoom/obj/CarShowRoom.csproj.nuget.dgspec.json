@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Student\\Documents\\ASP\\CarShowRoom\\CarShowRoom\\CarShowRoom.csproj": {}
+    "C:\\Users\\User\\OneDrive\\Работен плот\\SCHOOL\\ASP\\CarShowRoom\\CarShowRoom\\CarShowRoom.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Student\\Documents\\ASP\\CarShowRoom\\CarShowRoom\\CarShowRoom.csproj": {
+    "C:\\Users\\User\\OneDrive\\Работен плот\\SCHOOL\\ASP\\CarShowRoom\\CarShowRoom\\CarShowRoom.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Student\\Documents\\ASP\\CarShowRoom\\CarShowRoom\\CarShowRoom.csproj",
+        "projectUniqueName": "C:\\Users\\User\\OneDrive\\Работен плот\\SCHOOL\\ASP\\CarShowRoom\\CarShowRoom\\CarShowRoom.csproj",
         "projectName": "CarShowRoom",
-        "projectPath": "C:\\Users\\Student\\Documents\\ASP\\CarShowRoom\\CarShowRoom\\CarShowRoom.csproj",
-        "packagesPath": "C:\\Users\\Student\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Student\\Documents\\ASP\\CarShowRoom\\CarShowRoom\\obj\\",
+        "projectPath": "C:\\Users\\User\\OneDrive\\Работен плот\\SCHOOL\\ASP\\CarShowRoom\\CarShowRoom\\CarShowRoom.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\OneDrive\\Работен плот\\SCHOOL\\ASP\\CarShowRoom\\CarShowRoom\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Student\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -83,6 +83,20 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -91,7 +105,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.409\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.416\\RuntimeIdentifierGraph.json"
         }
       }
     }
